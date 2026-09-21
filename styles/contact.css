@@ -1,0 +1,137 @@
+.header-container {
+    min-height: 150px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 74%;
+    margin: 0 auto;
+    padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.contact-title {
+    font-size: 38px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 0;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #808080;
+    font-weight: 300;
+    margin: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #E5E7EB;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    color: #1F2937;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid #3880F6;
+    outline-offset: 1px;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3880F6;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #2f6fd6;
+}
+
+
+@media screen and (max-width: 480px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form {
+        padding: 24px;
+    }
+}
+

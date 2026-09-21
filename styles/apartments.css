@@ -1,0 +1,118 @@
+ /* Showcase Section */
+
+ .showcase {
+     min-height: 500px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #e5e7eb;
+     padding-bottom: 10vh;
+ }
+
+ .showcase-content {
+     display: flex;
+     gap: 50px;
+     max-width: 90%;
+ }
+
+ input[type="radio"] {
+     display: none;
+ }
+
+ .showcase-photo {
+     width: 600px;
+ }
+
+ .showcase-photo figure {
+     display: none;
+     margin: 0;
+     text-align: center;
+ }
+
+ .showcase-photo figure img {
+     width: 100%;
+     height: 400px;
+     object-fit: cover;
+     border-radius: 10px;
+     display: block;
+ }
+
+ .showcase-photo figcaption {
+     margin-top: 10px;
+     text-align: center;
+ }
+
+ .showcase-buttons {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 50px;
+ }
+
+ .photo-button {
+     padding: 12px 20px;
+     background-color: #1F2937;
+     color: white;
+     border-radius: 10px;
+     cursor: pointer;
+     font-family: 'Roboto', sans-serif;
+     text-align: center;
+ }
+
+ .photo-button:hover {
+     background: white;
+     color: #1F2937;
+ }
+
+ #pic1:checked~.showcase-photo .image1,
+ #pic2:checked~.showcase-photo .image2,
+ #pic3:checked~.showcase-photo .image3,
+ #pic4:checked~.showcase-photo .image4 {
+     display: block;
+ }
+
+ #pic1:checked~.showcase-buttons label[for="pic1"],
+ #pic2:checked~.showcase-buttons label[for="pic2"],
+ #pic3:checked~.showcase-buttons label[for="pic3"],
+ #pic4:checked~.showcase-buttons label[for="pic4"] {
+     background: white;
+     color: #1F2937;
+ }
+
+ @media (max-width: 768px) {
+
+     .benefits-section {
+         flex-wrap: wrap;
+         gap: 30px;
+         width: 95%;
+         
+    
+     }
+
+     .apartInfoContainer{
+        width: 95%;
+
+     }
+
+     .benefits-image-box {
+         flex-basis: 40%;
+     }
+
+     .showcase-content {
+         flex-direction: column;
+         align-items: center;
+         gap: 30px;
+         width: 95%;
+     }
+
+     .showcase-buttons {
+         gap: 15px;
+         width: 100%;
+     }
+
+     .showcase-photo {
+         width: 100%;
+         max-width: 330px;
+     }
+
+ }

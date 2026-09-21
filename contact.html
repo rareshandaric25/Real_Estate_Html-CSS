@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Homes | Contact Us</title>
+    <link rel="stylesheet" href="styles/universal.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <div class="header-box">
+                <img class="logonav1" src="assets/logoFullWhite.png" alt="Aurelia Homes logo" height="100" width="250">
+                <nav class="nav1">
+                    <ul class="menu-box">
+                        <li><a class="header-item" href="index.html">Home</a></li>
+                        <li><a class="header-item" href="apartments.html">Apartments</a></li>
+                        <li><a class="header-item" href="office.html">Office Space</a></li>
+                        <li><a class="header-item active" href="contact.html" aria-current="page">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="header-box">
+                <img class="logonav2" src="assets/logoSmallWhite.png" alt="Aurelia Homes logo" height="100" width="100">
+                <nav class="nav2">
+                    <ul class="menu-box">
+                        <li><a class="header-item" href="index.html" >Home</a></li>
+                        <li><a class="header-item" href="apartments.html">Apartments</a></li>
+                        <li><a class="header-item" href="office.html">Office Space</a></li>
+                        <li><a class="header-item active" href="contact.html" aria-current="page">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="burger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-intro">
+                <h1 class="contact-title">Schedule a visit</h1>
+                <p class="contact-subtitle">Tell us a bit about what you're looking for and we'll get back to you to arrange a viewing of one of our apartments or office spaces.</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </div>
+                    <div class="form-field">
+                        <label for="interest">Interested in</label>
+                        <select id="interest" name="interest" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="apartment">An apartment</option>
+                            <option value="office">An office space</option>
+                            <option value="undecided">Not sure yet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="visit-date">Preferred visit date</label>
+                        <input type="date" id="visit-date" name="visit-date">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Anything specific you'd like us to know? (unit size, budget, availability, etc.)"></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Request a visit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+
+        <div class="footer-grid">         
+            <nav class="footerNav1">
+                <ul class="menu-box2">
+                    <li><a class="footer-item" href="index.html">Home</a></li>
+                    <li><a class="footer-item" href="apartments.html">Apartments</a></li>
+                    <li><a class="footer-item" href="office.html">Office Space</a></li>
+                    <li><a class="footer-item active" href="contact.html" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <address>
+                <p>Sales Stand</p>
+                <p>10:00 | 19:00</p>
+                <p>Monday to Sunday</p>
+            </address>
+
+            <address>
+                <p>Household</p>
+                <p>Rua Maria José Nogueira Pinto Nº16, Lote 8-Loja 3 Lisboa, Portugal</p>
+            </address>
+
+            <div class="footerLogo">
+               <img src="assets/logoSmallWhite.png" alt="Aurelia Homes logo" height="100" width="100">
+            </div>
+
+        </div>
+
+        <div class="footer-gridMobile">    
+            <nav class="footerNav2">
+                <ul class="menu-box2">
+                    <li><a class="footer-item" href="index.html">Home</a></li>
+                    <li><a class="footer-item" href="apartments.html">Apartments</a></li>
+                    <li><a class="footer-item" href="office.html">Office Space</a></li>
+                    <li><a class="footer-item active" href="contact.html" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="footerLogo">
+               <img src="assets/logoSmallWhite.png" alt="Aurelia Homes logo" height="100" width="100">
+            </div>
+
+        </div>
+        <p class="footer-text">Copyright &copy; 2026 Aurelia Homes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
