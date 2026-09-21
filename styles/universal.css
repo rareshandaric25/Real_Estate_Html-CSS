@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 
-/* ----- Shared navigation ----- */
+/* Shared navigation */
 
 header {
     display: flex;
@@ -75,14 +75,14 @@ header {
 }
 
 
-/* Checkbox oculto que guarda el estado del menú */
+/* Hidden checkbox that saves the menu state */
 .menu-toggle {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-/* Icono burger, oculto en escritorio */
+/* Burger icon, hidden on the desktop */
 .burger {
     display: none;
     flex-direction: column;
@@ -99,7 +99,7 @@ header {
 }
 
 
-/* Nav desplegable móvil, oculto por defecto */
+/* Mobile dropdown nav, hidden by default */
 .nav2 {
     display: none;
     position: absolute;
@@ -112,7 +112,7 @@ header {
     z-index: 10;
 }
 
-/* Mostrar el desplegable cuando el checkbox está marcado */
+/* Show the dropdown when the checkbox is checked */
 .header-container:has(.menu-toggle:checked) .nav2 {
     display: block;
 }
@@ -192,7 +192,7 @@ header {
 
 
 
- /* BASE REUTILIZABLE — Benefits es la clase principal */
+ /* REUSABLE BASE — Benefits is the main class */
 .office-benefits,
 .features-section {
     min-height: 400px;
@@ -203,7 +203,7 @@ header {
     text-align: center;
 }
 
-/* Títulos principales */
+/* Main headers */
 .h2-benefits,
 .features-title {
     font-size: 36px;
@@ -231,14 +231,13 @@ header {
     width: 160px;
 }
 
-/* Imágenes */
+/* Images */
 .benefits-image-box img,
 .feature-card img {
     width: 80px;
     height: 80px;
 }
 
-/* Títulos de cada item */
 .benefit-title,
 .feature-title {
     font-size: 20px;
@@ -247,7 +246,7 @@ header {
     margin: 0;
 }
 
-/* Textos */
+/* Tesxts */
 .benefit-text,
 .feature-text {
     font-size: 18px;
@@ -282,7 +281,7 @@ header {
  }
 
 
-/*SECTION 4 - Call to action */
+/* SECTION 4 - Call to action */
 .cta-section {
     min-height: 350px;
     width: 100%;
@@ -354,7 +353,7 @@ header {
     font-weight: 900;
 }
 
-/* ----- Shared footer ----- */
+/* Shared footer */
 
 .footer-container {
 	min-height: 100px;
@@ -460,7 +459,7 @@ header {
 }
 
 
-/* ----- RESPONSIVENESS ----- */
+/* RESPONSIVENESS */
 
 
 @media screen and (max-width: 768px) {
